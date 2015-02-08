@@ -1,0 +1,208 @@
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/condition_img"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:src="@drawable/ic_launcher" >
+		<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" >
+	        <Button
+			    android:id="@+id/change_temp_units"
+			    android:layout_weight="1"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/change_temp_units" />
+			<Button
+			    android:id="@+id/change_city"
+			    android:layout_weight="1"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/change_city" />
+		</LinearLayout>
+		<View
+	      android:layout_width="0dp"
+	      android:layout_height="1dp"
+	      android:layout_weight="1"/>		
+		<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+		    <TextView
+		        android:id="@+id/weather_city"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/weather_city" />
+		
+		    <TextView
+		        android:id="@+id/weather_date"
+		        android:textStyle="bold|italic"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/weather_date" />
+		</LinearLayout>
+		
+
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+
+	        <TextView
+	            android:id="@+id/weather_temp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/weather_temp" />
+
+	        <TextView
+	            android:id="@+id/weather_condition"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/weather_condition" />
+
+	    </LinearLayout>
+  		<View
+	      android:layout_width="0dp"
+	      android:layout_height="1dp"
+	      android:layout_weight="1"/>
+  		<View
+	      	android:layout_width="fill_parent"
+			android:layout_height="2dip"
+			android:background="#000000"/>
+  		<TextView 
+  		    android:id="@+id/forecasts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/forecasts"/>
+  		<View
+	      	android:layout_width="fill_parent"
+			android:layout_height="2dip"
+			android:background="#000000"/>  		
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal" 
+	        android:background="@android:color/white">
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:orientation="vertical" >
+
+		        <TextView
+			        android:id="@+id/forecast1_date"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Date" />	
+				<View
+			      	android:layout_width="fill_parent"
+					android:layout_height="2dip"
+					android:background="#000000"/>            
+		        <TextView
+			        android:id="@+id/forecast1_high"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textStyle="bold|italic"
+			        android:text="Temp" />	            
+		        <TextView
+			        android:id="@+id/forecast1_low"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textStyle="bold|italic"
+			        android:text="Temp" />	            
+		        <TextView
+			        android:id="@+id/forecast1_condition"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textStyle="bold"
+			        android:text="Cond" />	            
+	        </LinearLayout>				
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:orientation="vertical" >
+
+		        <TextView
+			        android:id="@+id/forecast2_date"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Date" />	            
+				<View
+			      	android:layout_width="fill_parent"
+					android:layout_height="2dip"
+					android:background="#000000"/>            
+		        <TextView
+			        android:id="@+id/forecast2_high"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textStyle="bold|italic"
+			        android:text="Temp" />	            
+		        <TextView
+			        android:id="@+id/forecast2_low"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textStyle="bold|italic"
+			        android:text="Temp" />	            
+		        <TextView
+			        android:id="@+id/forecast2_condition"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textStyle="bold"
+			        android:text="Cond" />	            
+	        </LinearLayout>			              
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:orientation="vertical" >
+
+		        <TextView
+			        android:id="@+id/forecast3_date"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Date" />
+				<View
+			      	android:layout_width="fill_parent"
+					android:layout_height="2dip"
+					android:background="#000000"/>            
+		        <TextView
+			        android:id="@+id/forecast3_high"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textStyle="bold|italic"
+			        android:text="Temp" />	            
+		        <TextView
+			        android:id="@+id/forecast3_low"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:textStyle="bold|italic"
+			        android:text="Temp" />	            
+		        <TextView
+			        android:id="@+id/forecast3_condition"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+					android:textStyle="bold"
+			        android:text="Cond" />	            
+	        </LinearLayout>
+	    </LinearLayout>
+  		<View
+	      	android:layout_width="fill_parent"
+			android:layout_height="2dip"
+			android:background="#000000"/>	    
+  		<View
+	      android:layout_width="0dp"
+	      android:layout_height="1dp"
+	      android:layout_weight="1"/>
+
+		
+	</LinearLayout>
