@@ -32,11 +32,6 @@
             android:label="@string/title_activity_main"
             android:screenOrientation="portrait" >
         </activity>
-        <activity
-            android:name=".CityChangeActivity"
-            android:label="@string/title_activity_city_change"
-            android:screenOrientation="portrait" >
-        </activity>
     </application>
 
 </manifest>
